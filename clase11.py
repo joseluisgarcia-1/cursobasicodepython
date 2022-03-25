@@ -1,0 +1,27 @@
+"""input es para pedir al usuario que ingrese datos, hay que tener en cuenta que el input 
+siempre va recibir el número o el dato que ingresen en string, por ejemplo así:"""
+numero1 = input("Ingresa un número: ")
+print(numero1)
+type(numero1)
+print()
+numero2 = input("Ingresa un nuevo número: ")
+print(numero2)
+print("número1 + número2:",numero1+numero2)
+print("Ahora voy a transformar esos dos números a enteros")
+numero1 = int(numero1)
+print("número 1:",numero1)
+numero2 = int(numero2)
+print("número 2:",numero2)
+suma = numero1+numero2
+print(suma)
+print("si bien nos damos cuenta que en la primera suma no lo hace como una suma de números si no como una suma de strings\n pero en la segunda suma como transformamos los números a enteros si nos hace la operación esperada")
+print()
+decimal = 4.5
+print("decimal",decimal)
+print("convertiré ese decimal en entero así: int(decimal) ó así int(3.5)")
+print(int(decimal))
+print(int(3.5))
+print()
+print("convertiré ese decimal en string así: str(3.5) ó str(decimal)")
+print(str(decimal))
+print(str(3.5))
