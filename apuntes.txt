@@ -1100,7 +1100,78 @@ Aporte creado por: Rusbel Bermúdez, Ignacio Crespo.
 
 ***Clase 29 Entendiendo cómo funcionan las tuplas***
 
+Las tuplas son estructuras de datos inmutables. Es decir, no puedes modificar una tupla a agregando o quitando un valor. Lo único que puedes hacer es definir de nuevo esa tupla a. Los objetos inmutables (como los strings) son tipos de datos para Python que apuntan a un lugar específico en memoria y que su contenido no puede ser cambiado. Al cambiar el contenido predefiniendo el contenido de la variable a, entonces cambiará su posición en memoria.
+
+Cómo trabajar con tuplas en Python
+Declarar tupla
+mi_tupla = ()
+mi_tupla = (1,2,3)
+Generar una tupla de 1 solo valor
+La , es obligatoria.
+
+mi_tupla = (1,)
+Acceder a un índice de la tupla
+mi_tupla = (1,2,3)
+mi_tupla[0] #1
+mi_tupla[1] #2
+mi_tupla[2] #3
+Reasignar una tupla
+mi_tupla = (1,2,3)
+mi_otra_tupla = (4,5,6)
+mi_tupla =+ mi_otra_tupla
+Métodos para trabajar con tuplas
+Usando el ejemplo:
+
+mi_tupla = (1,1,1,2,2,3)
+Encontraremos los siguientes métodos:
+
+mi_tupla.count(1)
+Devolverá 3, ya que el número 1 aparece 3 veces en la tupla.
+mi_tupla.index(3)
+Devolverá 5, índice de la primera instancia donde se encuentra un elemento.
+mi_tupla.index(1)
+Devolverá 0
+mi_tupla.index(2)
+Devolverá 3.
+Aporte creado por: Rusbel Bermúdez.
+
 ***Clase 30 ¿Qué son los diccionarios?***
+
+Los diccionarios en Python son una estructura de datos mutable las cuales almacenan diferentes tipos de valores sin darle importancia a su orden. Identifican a cada elemento por una clave (Key). Se escriben entre {}.
+
+Operaciones en diccionarios
+.keys():Retorna la clave de nuestro elemento.
+
+.values(): Retorna una lista de elementos (valores del diccionario).
+
+.items(): Devuelve lista de tuplas (primero la clave y luego el valor).
+
+.clear(): Elimina todos los items del diccionario.
+
+.pop(“n”): Elimina el elemento ingresado.
+
+Cómo trabajar con diccionarios
+Definir función principal
+def run():
+    # Defino el diccionario, agrego los valores.
+    mi_diccionario = {
+      'llave1' : 1,
+      'llave2' : 2,
+      'llave3' : 3,
+    }
+Imprimir las llaves del diccionario utilizando un bucle for. Con ‘.keys()’ estamos llamando a imprimir las llaves, no los valores.
+    for llave in mi_diccionario.keys():
+        print(llave)
+Imprimir los valores del diccionario empleando un bucle for. Con ‘.values()’ estoy llamando a imprimir los valores.
+    for valores in mi_diccionario.values():
+        print(valores)
+Imprimir las llaves y los valores usando ‘.items()’. Para esto, coloco las variables llave e items.
+for llave, items in mi_diccionario.items():
+        print("La llave: '" + llave + "' contiene el item: " + str(items))
+
+if __name__ == '__main__':
+    run()
+Aporte creado por: Rusbel Bermúdez, Ignacio Escudero.
 
 ***Clase 31 Proyecto: generador de contraseñas***
 
